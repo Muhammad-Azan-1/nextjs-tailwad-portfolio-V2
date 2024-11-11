@@ -87,7 +87,7 @@ const Page = () => {
             />{" "}
           </Link>
           <h3
-            className={`${urbanist.className}mt-[5px] dark:text-white text-[2rem] font-[600] text-secondary`}
+            className={`${urbanist.className} mt-[5px] mb-[10px]  dark:text-white text-[2rem] font-[600] text-secondary`}
           >
             Currency Converter
           </h3>
@@ -105,7 +105,7 @@ const Page = () => {
             />
           </Link>
           <h3
-            className={` ${urbanist.className} mt-[5px] dark:text-white text-[2rem] font-[600] text-secondary`}
+            className={` ${urbanist.className} mt-[5px] mb-[10px]  dark:text-white text-[2rem] font-[600] text-secondary`}
           >
             Tic Tac Toe
           </h3>
