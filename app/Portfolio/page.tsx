@@ -22,7 +22,7 @@ const Page = () => {
         <div
           className={`${style.box} border-[2px] text-center cursor-pointer `}
         >
-          <Link href="">
+          <Link href="https://next-js-milestone2-custom-css.vercel.app/">
             <Image
               className="rounded-[5px] hover:scale-105 hover:drop-shadow-[0px 4px 12px rgba(0,0,0,0.3)]  transition-transform duration-300 "
               src="/images/uni.jpeg"
@@ -57,7 +57,7 @@ const Page = () => {
         </div>
 
         <div className="border-[2px] text-center cursor-pointer ">
-          <Link href="" target="_blank">
+          <Link href="https://next-js-class-assignment3.vercel.app/" target="_blank">
             <Image
               className="rounded-[5px] hover:scale-105 hover:drop-shadow-[0px 4px 12px rgba(0,0,0,0.3)] transition-transform duration-300 "
               src="/images/img7.jpeg"
@@ -75,7 +75,7 @@ const Page = () => {
         </div>
 
         <div className="border-[2px] text-center ">
-          <Link href="" target="_blank">
+          <Link href="https://azans-currency-converter.netlify.app/" target="_blank">
             {" "}
             <Image
               className="rounded-[5px] hover:scale-105 hover:drop-shadow-[0px 4px 12px rgba(0,0,0,0.3)] transition-transform duration-300"
@@ -94,7 +94,7 @@ const Page = () => {
         </div>
 
         <div className="border-[2px] text-center ">
-          <Link href="" target="_blank">
+          <Link href="https://effortless-valkyrie-2cf7c7.netlify.app/" target="_blank">
             <Image
               className="rounded-[5px] hover:scale-105 hover:drop-shadow-[0px 4px 12px rgba(0,0,0,0.3)] transition-transform duration-300"
               src="/images/img6.webp"
@@ -112,7 +112,7 @@ const Page = () => {
         </div>
 
         <div className="border-[2px] text-center ">
-          <Link href="" target="_blank">
+          <Link href="https://bucolic-pothos-3c7a23.netlify.app/" target="_blank">
             {" "}
             <Image
               className="rounded-[5px] hover:scale-105 hover:drop-shadow-[0px 4px 12px rgba(0,0,0,0.3)] transition-transform duration-300"
