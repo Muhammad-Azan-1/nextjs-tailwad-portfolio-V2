@@ -8,15 +8,22 @@ const Theme = () => {
 
   const [darkMode, setdarkMode] = useState(
     () => {
-      return localStorage.getItem("theme") === "dark";
+      if (typeof window !== 'undefined') {
+        const storedTheme = localStorage.getItem("theme");
+        return storedTheme === "dark";
+      
+      }
+      return false;
     } 
   );
   
   useEffect(() => {
 
-    if (typeof window !== 'undefined'&& typeof localStorage !== 'undefined') {
+    if (typeof window !== 'undefined') {
       // Get the theme from localStorage if available
       const storedTheme = localStorage.getItem("theme");
+      console.log("COMPLETED222222222222222222")
+      console.log("STORED THEME2",storedTheme )
       setdarkMode(storedTheme === "dark");
     }
   }, []);
@@ -27,6 +34,7 @@ const Theme = () => {
           if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      console.log("COMPLETED33333333333333333333333")
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
@@ -69,3 +77,7 @@ export default Theme;
 // localStorage is a browser feature that allows you to persist key-value data across page reloads and sessions.
   // Data in localStorage will remain until it is explicitly changed or removed.
   // initally return nfalse to the darkMode because there is no value in localStorage  so null === "string" (false)
+
+
+//   The useEffect hook will always run when the darkMode state changes.
+// It also runs immediately when the component mounts, because React runs the useEffect hook after the initial render, regardless of whether the state has changed or not.
