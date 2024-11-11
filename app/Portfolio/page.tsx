@@ -97,7 +97,7 @@ const Page = () => {
           <Link href="https://effortless-valkyrie-2cf7c7.netlify.app/" target="_blank">
             <Image
               className="rounded-[5px] hover:scale-105 hover:drop-shadow-[0px 4px 12px rgba(0,0,0,0.3)] transition-transform duration-300"
-              src="/images/img6.webp"
+              src="/images/tic-tac.jpg"
               alt="Project 1"
               width={420}
               height={250}
@@ -124,7 +124,7 @@ const Page = () => {
             />
           </Link>
           <h3
-            className={` ${urbanist.className} mt-[5px] dark:text-white text-[2rem] font-[600] text-secondary`}
+            className={` ${urbanist.className} mt-[5px] mb-[10px] dark:text-white text-[2rem] font-[600] text-secondary`}
           >
             Rock Papar Scissors
           </h3>
