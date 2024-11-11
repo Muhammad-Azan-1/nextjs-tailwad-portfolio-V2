@@ -10,7 +10,7 @@ const Theme = () => {
     () => {
       return localStorage.getItem("theme") === "dark";
     } 
-  ) as any;
+  );
   
   useEffect(() => {
 
