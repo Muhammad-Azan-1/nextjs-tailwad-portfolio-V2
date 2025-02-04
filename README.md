@@ -1,3 +1,13 @@
+DEAR SIR AMEEEN !
+
+website is created using tailwad CSS I just add modules css for some styles this was done 3 months ago today I just move components folder
+outside the app directory as I see your post on linkedIn that validate the links provided. please considered this
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
