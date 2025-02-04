@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faSquareInstagram,faLinkedin, faSquareFacebook,faTwitter,} from "@fortawesome/free-brands-svg-icons";
 
 //Fonts
-import { poppins,urbanist } from "../../page";
+import { poppins,urbanist } from "@/app/page";
 
 const Hero = () => {
   return (

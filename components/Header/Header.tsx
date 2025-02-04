@@ -4,7 +4,7 @@ import Link from "next/link";
 import Toggle from "../Toggletheme/Toggle";
 
 //font
-import { poppins } from "../../page";
+import { poppins } from "@/app/page";
 import { faBars,faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

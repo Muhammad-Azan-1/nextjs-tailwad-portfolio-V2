@@ -2,7 +2,7 @@ import style from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import {urbanist } from "../page";
-import Header from '../components/Header/Header';
+import Header from '@/components/Header/Header';
 
 
 const Page = () => {
