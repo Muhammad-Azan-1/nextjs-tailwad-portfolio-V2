@@ -1,6 +1,6 @@
 import {urbanist } from ".././page";
 import style from "./page.module.css";
-import Header from '../Components/Header/Header';
+import Header from '@/components/Header/Header';
 const Page = () => {
   return (
     <>

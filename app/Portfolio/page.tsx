@@ -1,8 +1,8 @@
 import style from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import {urbanist } from ".././page";
-import Header from '../Components/Header/Header';
+import {urbanist } from "../page";
+import Header from '../components/Header/Header';
 
 
 const Page = () => {

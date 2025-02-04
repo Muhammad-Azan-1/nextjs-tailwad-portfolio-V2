@@ -2,7 +2,7 @@ import { poppins,urbanist } from "../page";
 
 import style from "./page.module.css";
 import Image from "next/image";
-import Header from '../Components/Header/Header';
+import Header from '@/components/Header/Header';
 const About = () => {
   return (
     <>
