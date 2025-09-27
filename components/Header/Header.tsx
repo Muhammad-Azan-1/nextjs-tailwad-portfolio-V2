@@ -65,7 +65,7 @@ const Header = () => {
             <Link
               className={` ${openSans.className} relative  pl-[2rem] md:ml-[4rem]  text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
          after:bg-[#ff7e5f] after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`} 
-              href="/"
+              href="#home"
             >
               Home
             </Link>
@@ -73,7 +73,7 @@ const Header = () => {
             <Link
               className= {` ${openSans.className} relative pl-[2rem]  md:ml-[4rem] text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
          after:bg-[#ff7e5f] after:bg-animatedText after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`}
-              href="/About"
+              href="#about"
             >
               About
             </Link>
@@ -81,16 +81,16 @@ const Header = () => {
             <Link
               className={` ${openSans.className} relative pl-[2rem]  md:ml-[4rem] text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
          after:bg-[#ff7e5f]  after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`}
-              href="/Portfolio"
+              href="#connect"
             >
-             Let&apos;s Connect
+              Connect
             </Link>
 
             <Link
               className={`${openSans.className} relative pl-[2rem]  md:ml-[4rem] text-[1.7rem] after:content-[" "]
          after:absolute after:w-0 after:h-[2.5px] after:bg-[#ff7e5f]  after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[60px] sm:after:hover:w-full 
          after:hover:duration-700`}
-              href="/Contact"
+              href="#projects"
             >
              Projects
             </Link>
