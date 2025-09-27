@@ -50,7 +50,7 @@ const Hero = () => {
                 {" "}
                 Muhammad <br /> Azan
               </span>
-              A FRONTEDN DEVELOPER
+              A FRONTEND DEVELOPER
             </h1>
           </div>
 
