@@ -83,7 +83,7 @@ const Header = () => {
          after:bg-[#ff7e5f]  after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`}
               href="/Portfolio"
             >
-             Let's Connect
+             Let&apos;s Connect
             </Link>
 
             <Link
