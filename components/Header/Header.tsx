@@ -4,7 +4,7 @@ import Link from "next/link";
 import Toggle from "../Toggletheme/Toggle";
 
 //font
-import { Open_Sans ,  Pacifico , Montserrat } from "next/font/google"; // ✅ import from next/font/google
+import { Open_Sans } from "next/font/google"; // ✅ import from next/font/google
 export const openSans = Open_Sans({
     weight: ["300", "400", "600", "700"], 
     subsets: ["latin"],

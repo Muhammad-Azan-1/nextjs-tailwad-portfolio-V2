@@ -17,27 +17,10 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-// font icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareInstagram,
-  faLinkedin,
-  faSquareFacebook,
-  faTwitter,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
 
-//Fonts
 
 const Hero = () => {
-  const skills = [
-    "JavaScript (ES6+)",
-    "React.js",
-    "HTML/CSS",
-    "Bootstrap",
-    "Tailwind CSS",
-    "Git/GitHub",
-  ];
+
   return (
     <>
       <div

@@ -20,10 +20,6 @@ export const metadata: Metadata = {
 
 
 
-// import "@fortawesome/fontawesome-svg-core/styles.css"; // Import styles
-
-// import Header from './Components/Header/Header';
-// import Footer from "@/components/Footer/Footer";
 
 export default function RootLayout({
   children,

@@ -40,13 +40,13 @@ const AboutMe = () => {
 
 
         <div className={`dark:${montserrat.className} dark:text-white dark:font-semibold text-[20px] px-[20px] sm:px-[60px] text-center tracking-wider font-light mt-10 flex justify-center items-center`}>
-            <h1>Hello, I'm <span className={`${arizonia.className} first-line:uppercase animatedText text-[35px]`}>Muhammad Azan</span>, an aspiring Frontend Developer with a robust foundation in core web technologies.
+            <h1>Hello, I&apos;m <span className={`${arizonia.className} first-line:uppercase animatedText text-[35px]`}>Muhammad Azan</span>, an aspiring Frontend Developer with a robust foundation in core web technologies.
                 I specialize in crafting clean, visually precise, and responsive interfaces using <span className={`${montserrat.className} bg-orange-200 text-orange-800 text-[22px]`}>HTML5</span>, modern <span className={`${montserrat.className} bg-orange-200 text-orange-800 text-[22px]`}>CSS</span>, and 
                 the efficiency of <span className={`${montserrat.className} bg-blue-200 text-blue-800 text-[22px]`}> Tailwind CSS</span>. My strong understanding of <span className={`${montserrat.className} bg-yellow-200 text-yellow-800 text-[22px]`}>JavaScript (ES6+)</span> and <span className={`${montserrat.className} bg-sky-200 text-sky-800 text-[22px]`}>Typescript</span> allows me to implement dynamic 
                 functionality, and I am currently dedicated to mastering  <span className={`${montserrat.className} bg-green-200 text-green-800 text-[22px]`}>React.js</span> to build scalable, component-based 
                 applications. I am currently expanding my knowledge through formal training in <span className={`${montserrat.className} bg-green-200 text-green-800 text-[22px]`}>Full-Stack Mobile and Web Development (SMIT)</span>  and <span className={`${montserrat.className} bg-blue-200 text-blue-800 text-[22px]`}>Agentic AI Development (GIAIC)</span>, preparing me for diverse and challenging roles.
 
-                I'm driven by   <span className={`${montserrat.className} text-[22px]`}>continuous learning</span> and the goal of creating AI based Mobile and Web Apps</h1>
+                I&apos;m driven by   <span className={`${montserrat.className} text-[22px]`}>continuous learning</span> and the goal of creating AI based Mobile and Web Apps</h1>
         </div>
 
         <div>
@@ -63,7 +63,7 @@ const AboutMe = () => {
       <div className={`${openSans.className} mt-24   w-full h-auto  flex justify-start items-center flex-col`}
         >
           <h1 className="text-center dark:text-white text-[35px] sm:text-[50px] md:text-[60px]  mdx:text-[70px] lg:text-[85px] xl:text-[100px] font-extrabold">
-            Let's{" "}
+            Let&apos;s{" "}
             <span className=" text-transparent animatedText">Connect</span>{" "}
           </h1>
         </div>

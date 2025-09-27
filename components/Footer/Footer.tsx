@@ -1,10 +1,10 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faLinkedin, faXTwitter  , faGithub, faMailchimp, faInstagram, faSquareFacebook, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFaceAngry, faLink, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {faLinkedin, faXTwitter  , faGithub, faInstagram, faSquareFacebook, } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Arizonia ,  Montserrat } from "next/font/google"; // Import fonts used elsewhere
 import Link from "next/link";
-import { faSquare } from "@fortawesome/free-solid-svg-icons/faSquare";
+
 const arizonia = Arizonia({
   weight: ["400"],
   subsets: ["latin"],

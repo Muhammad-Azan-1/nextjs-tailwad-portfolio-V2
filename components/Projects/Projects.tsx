@@ -10,7 +10,6 @@ const openSans = Open_Sans({
 
 const Projects = () => {
   const stack = ["Javascript", "Html", "BootStrap", "CSS"];
-  const stack2 = ["NextJS", "Tailwand CSS", "Custom CSS", "Sanity (As Backend)"];
   return (
     <>
       <div className="h-auto w-full     [background-size:200px_200px] bg-repeat
