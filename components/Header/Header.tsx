@@ -40,13 +40,13 @@ const Header = () => {
         {/* bars to Open menu */}
         <div
           onClick={ToggleMenu}
-          className={` ${menu ? style.hideIcon : style.showIcon} cursor-pointer fixed top-[] right-14 inline-block sm:hidden text-black text-[22px]`}
+          className={` ${menu ? style.hideIcon : style.showIcon} cursor-pointer fixed top-[] right-14 inline-block sm:hidden text-black  dark:text-white text-[22px]`}
         >
          <FontAwesomeIcon icon={faBars} />
         </div>
 
           {/* cross bar to Close menu */}
-          <div onClick={ToggleMenu} className={`${menu ? style.showIcon : style.hideIcon } cursor-pointer  fixed top-18 right-14 inline-block sm:hidden text-black text-[24px] `}>
+          <div onClick={ToggleMenu} className={`${menu ? style.showIcon : style.hideIcon } cursor-pointer  fixed top-18 right-14 inline-block sm:hidden text-black dark:text-white text-[24px] `}>
               <FontAwesomeIcon icon={faTimes} />
             </div>
 
@@ -54,8 +54,8 @@ const Header = () => {
         <div
           className={` ${menu ? style.showMwenu : style.hiddeMenu } 
              absolute bottom-[-213px]  border-1 border-solid border-borderColor sm:border-none 
-             sm:dark:border-none rounded-3xl sm:rounded-none   bg-white sm:bg-transparent w-[95%] 
-             sm:w-auto sm:static cursor-pointer flex items-center dark:text-white text-secondary`}
+             sm:dark:border-none rounded-3xl sm:rounded-none   bg-white dark:bg-black dark:shadow-xl dark:shadow-[rgba(255,255,255,0.09)] sm:bg-transparent w-[95%] 
+             sm:w-auto sm:static cursor-pointer flex items-center dark:text-white`}
         
         >
           <div className={` ${style.navbarInner} w-full flex flex-col py-6 sm:py-0 gap-y-10 sm:gap-y-0  sm:flex-row`}>
@@ -83,7 +83,7 @@ const Header = () => {
          after:bg-[#ff7e5f]  after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`}
               href="/Portfolio"
             >
-              Portfolio
+             Let's Connect
             </Link>
 
             <Link
@@ -92,7 +92,7 @@ const Header = () => {
          after:hover:duration-700`}
               href="/Contact"
             >
-              Contact
+             Projects
             </Link>
         </div>
         </div>

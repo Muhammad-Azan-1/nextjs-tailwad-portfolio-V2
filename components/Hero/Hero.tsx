@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
 
           <div
-            className={`${openSans.className}  text-[20px] sm:text-[22px] mt-2 px-2 sm:px-12 font-light text-center tracking-wider`}
+            className={`${openSans.className}  dark:text-white text-[20px] sm:text-[22px] mt-2 px-2 sm:px-12 font-light text-center tracking-wider`}
           >
             <p>
               I can transforms ideas into smooth, high-impact websites that
@@ -66,7 +66,9 @@ const Hero = () => {
 
           <div id="about" >
             <Link href="#projects" >
-            <button className= {` ${openSans.className} mt-12 font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-10 bg-white dark:bg-black w-[200px] text-[18px] py-[15px] rounded-[60px] flex justify-center items-center border-solid border-2 border-black dark:border-white   text-black dark:text-white`}>View Projects <span className="ml-5 mt-1">→</span> </button>
+            <button className= {` mt-[35px] ${openSans.className}  font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-10 bg-white dark:bg-black w-[200px] 
+              text-[18px] py-[15px] rounded-[60px] flex justify-center items-center border-solid border-2 border-black
+               dark:border-white   text-black dark:text-white`}>View Projects <span className="ml-5 mt-1">→</span> </button>
             </Link>
           </div>
         </div>
