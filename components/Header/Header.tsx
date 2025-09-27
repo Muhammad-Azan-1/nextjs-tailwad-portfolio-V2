@@ -4,7 +4,13 @@ import Link from "next/link";
 import Toggle from "../Toggletheme/Toggle";
 
 //font
-import { poppins } from "@/app/page";
+import { Open_Sans ,  Pacifico , Montserrat } from "next/font/google"; // ✅ import from next/font/google
+export const openSans = Open_Sans({
+    weight: ["300", "400", "600", "700"], 
+    subsets: ["latin"],
+});
+
+
 import { faBars,faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -19,13 +25,14 @@ const Header = () => {
 
   return (
     <>
+    <div className="w-full flex fixed px-6 lg:px-0 justify-center items-center pt-[25px]">
       <div
-        className={`${style.main} ${poppins.className} w-full h-[75px] fixed flex items-center dark:bg-[#14073e] bg-primary top-0 left-0 pt-[2rem] pb-[2rem] pl-[7%] pr-[7%]
-      border-main border-b-[10px] border-solid border-t-0 border-r-0 border-l-0 `}
+        className={`${style.main} w-[850px] lg:w-[950px] h-[75px] bg-white justify-center  flex items-center dark:bg-black
+      border-1 border-solid border-borderColor  dark:border-borderColor2 rounded-3xl sm:rounded-[60px] px-12 shadow-lg  dark:shadow-[rgba(255,255,255,0.09)]`}
       >
         <Link
           href="/"
-          className={`${style.logo} mr-auto text-[2.5rem] cursor-pointer font-bold text-main`}
+          className={`${style.logo} ${openSans.className} mr-auto text-[2.5rem] cursor-pointer font-bold animatedText`}
         >
           Portfolio
         </Link>
@@ -33,51 +40,56 @@ const Header = () => {
         {/* bars to Open menu */}
         <div
           onClick={ToggleMenu}
-          className={`${style.barIcon} text-main dark:text-white`}
+          className={` ${menu ? style.hideIcon : style.showIcon} cursor-pointer fixed top-[] right-14 inline-block sm:hidden text-black text-[22px]`}
         >
-    
-          <FontAwesomeIcon icon={faBars} />
+         <FontAwesomeIcon icon={faBars} />
         </div>
 
-        <div
-          className={` ${menu ? style.showMwenu : style.hiddeMenu } ${
-            style.navbar
-          } cursor-pointer font-semibold flex items-center dark:text-white text-secondary`}
-        
-        >
-          <div className={`${style.navbarInner} w-full`}>
-            {/* cross bar to Close menu */}
-            <div onClick={ToggleMenu} className={`${style.closeIcon}`}>
+          {/* cross bar to Close menu */}
+          <div onClick={ToggleMenu} className={`${menu ? style.showIcon : style.hideIcon } cursor-pointer  fixed top-18 right-14 inline-block sm:hidden text-black text-[24px] `}>
               <FontAwesomeIcon icon={faTimes} />
             </div>
+
+
+        <div
+          className={` ${menu ? style.showMwenu : style.hiddeMenu } 
+             absolute bottom-[-213px]  border-1 border-solid border-borderColor sm:border-none 
+             sm:dark:border-none rounded-3xl sm:rounded-none   bg-white sm:bg-transparent w-[95%] 
+             sm:w-auto sm:static cursor-pointer flex items-center dark:text-white text-secondary`}
+        
+        >
+          <div className={` ${style.navbarInner} w-full flex flex-col py-6 sm:py-0 gap-y-10 sm:gap-y-0  sm:flex-row`}>
+
+          
+
             <Link
-              className='relative ml-[4rem] text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
-         after:bg-main after:left-0 after:bottom-[-2px] after:hover:w-full after:hover:duration-700'
+              className={` ${openSans.className} relative  pl-[2rem] md:ml-[4rem]  text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
+         after:bg-[#ff7e5f] after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`} 
               href="/"
             >
               Home
             </Link>
 
             <Link
-              className=' relative ml-[4rem] text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
-         after:bg-main after:left-0 after:bottom-[-2px] after:hover:w-full after:hover:duration-700'
+              className= {` ${openSans.className} relative pl-[2rem]  md:ml-[4rem] text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
+         after:bg-[#ff7e5f] after:bg-animatedText after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`}
               href="/About"
             >
               About
             </Link>
 
             <Link
-              className='relative ml-[4rem] text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
-         after:bg-main after:left-0 after:bottom-[-2px] after:hover:w-full after:hover:duration-700'
+              className={` ${openSans.className} relative pl-[2rem]  md:ml-[4rem] text-[1.7rem] after:content-[" "] after:absolute after:w-0 after:h-[2.5px]
+         after:bg-[#ff7e5f]  after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[50px] sm:after:hover:w-full after:hover:duration-700`}
               href="/Portfolio"
             >
               Portfolio
             </Link>
 
             <Link
-              className='relative ml-[4rem] text-[1.7rem] after:content-[" "]
-         after:absolute after:w-0 after:h-[2.5px] after:bg-main after:left-0 after:bottom-[-2px] after:hover:w-[100%] 
-         after:hover:duration-700'
+              className={`${openSans.className} relative pl-[2rem]  md:ml-[4rem] text-[1.7rem] after:content-[" "]
+         after:absolute after:w-0 after:h-[2.5px] after:bg-[#ff7e5f]  after:left-8 sm:after:left-5 after:bottom-[-2px] after:hover:w-[60px] sm:after:hover:w-full 
+         after:hover:duration-700`}
               href="/Contact"
             >
               Contact
@@ -86,6 +98,9 @@ const Header = () => {
         </div>
         <Toggle />
       </div>
+      <div></div>
+      </div>
+    
     
     </>
   );

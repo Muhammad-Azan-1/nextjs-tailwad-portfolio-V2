@@ -1,105 +1,90 @@
-
-//just for responsiveness
+// just for responsiveness
 import style from "./hero.module.css";
 import Link from "next/link";
-import Image from "next/image";
+
+import { Arizonia, Montserrat, Open_Sans } from "next/font/google";
+const openSans = Open_Sans({
+  weight: ["300", "400", "600", "700"],
+  subsets: ["latin"],
+});
+const arizonia = Arizonia({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  weight: ["700"],
+  subsets: ["latin"],
+});
 
 // font icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faSquareInstagram,faLinkedin, faSquareFacebook,faTwitter,} from "@fortawesome/free-brands-svg-icons";
+import {
+  faSquareInstagram,
+  faLinkedin,
+  faSquareFacebook,
+  faTwitter,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 //Fonts
-import { poppins,urbanist } from "@/app/page";
 
 const Hero = () => {
+  const skills = [
+    "JavaScript (ES6+)",
+    "React.js",
+    "HTML/CSS",
+    "Bootstrap",
+    "Tailwind CSS",
+    "Git/GitHub",
+  ];
   return (
     <>
       <div
-        className={` ${style.main} w-full h-screen mt-[12rem] flex items-center justify-evenly`}
+      id="home"
+        className={`${style.main}  w-full h-min-screen flex items-center justify-evenly`}
       >
-        <div className={`${style.content_box}  ml-[20px] h-[60%]`}>
-          <div className={style.text_box}>
-            <h1
-              className={`${urbanist.className} mb-[-15px] text-secondary dark:text-white text-5xl font-bold tracking-[.3rem]`}
-            >
-              Hello, I am
-            </h1>
-            <h1
-              className={`${style.me} ${urbanist.className} ml-[-5px] text-secondary dark:text-white text-[4.5rem] font-extrabold tracking-wider`}
-            >
-              MUHAMMAD AZAN
-            </h1>
-            <p
-              className={`${poppins.className} text-[1.5rem] dark:text-white text-[#777]`}
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
-              <br />
-              temporibus consecteturvoluptatem quod nisi ipsum. Eveniet lorem,
-              <br />
-              ipsum Eveniet pariatur .
-            </p>
-
-            <div
-              className={`${style.Icons} w-[100%] flex mt-10 -mr-4`}
-            >
-              <Link
-                className={`  mr-12 text-[2rem] h-[50px] w-[50px] border-solid border-main border-[2px] rounded-[50%] flex justify-center items-center
-                     text-main cursor-pointer  hover:bg-main hover:text-primary hover:duration-[0.7s] `}
-                href=""
-              >
-                <FontAwesomeIcon icon={faSquareFacebook} />
-              </Link>
-
-              <Link
-                className={`mr-12 text-[2rem] h-[50px] w-[50px] border-solid border-main border-[2px] rounded-[50%] flex justify-center items-center
-                     text-main cursor-pointer  hover:bg-main hover:text-primary hover:duration-[0.7s]`}
-                href=""
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
-
-              <Link
-                className={`mr-12 text-[2rem] h-[50px] w-[50px] border-solid border-main border-[2px] rounded-[50%] flex justify-center items-center
-                     text-main cursor-pointer  hover:bg-main hover:text-primary hover:duration-[0.7s]`}
-                href=""
-              >
-                <FontAwesomeIcon icon={faTwitter} />
-              </Link>
-
-              <Link
-                className={` text-[2rem] h-[50px] w-[50px] border-solid border-main border-[2px] rounded-[50%] flex justify-center items-center
-                     text-main cursor-pointer  hover:bg-main hover:text-primary hover:duration-[0.7s]`}
-                href=""
-              >
-                <FontAwesomeIcon icon={faSquareInstagram} />
-              </Link>
-            </div>
-
-            <div>
-              <button
-                className={`${style.btn} py-6 px-12 rounded-[5px] mt-[3rem] ml-[0.5rem] border-2 border-solid border-main bg-main text-primary text-[1.5rem] font-semibold
-                hover:bg-primary hover:text-main hover:duration-[1s] hover:dark:text-white hover:dark:bg-[#14073e]`}
-              >
-                Download CV
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* images section */}
-        <div className={`${style.main2} mr-[20px]  pb-[30px] h-full`}>
+        <div
+          className={` w-full h-full bg-white  dark:bg-black pt-[150px] 
+    [background-image:linear-gradient(to_right,rgba(0,0,0,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.07)_1px,transparent_1px)]
+    dark:[background-image:linear-gradient(to_right,rgba(255,255,255,0.09)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.09)_1px,transparent_1px)]
+    [background-size:50px_50px] flex items-center flex-col `}
+        >
           <div
-            className={`${style.mainBox} bg-main w-full h-full`}
-            style={{ borderRadius: "100% 100% 39% 39% / 15% 15% 15% 15%" }}
+            className={` ${openSans.className} px-10 bg-black dark:bg-white dark:text-black w-[300px] text-3xl py-[10px] rounded-[60px] flex justify-center items-center   text-white`}
           >
-            <Image
-              src="/images/home.png"
-              width={691}
-              height={471}
-              alt="My Images"
-              className={`${style.img} w-full h-full`}
-              loading="lazy"
-            ></Image>
+            Frontend Web Developer
+          </div>
+
+          <div className="mt-14 w-full flex items-center justify-center gap-x-10">
+            <h1
+              className={`${montserrat.className}  text-black dark:text-white  text-center text-[35px] sm:text-[50px] md:text-[60px]  mdx:text-[70px] lg:text-[85px] xl:text-[100px] font-extrabold`}
+            >
+              HELLO I AM{" "}
+              <span
+                className={`${arizonia.className} animatedText text-[45px] sm:text-[60px] md:text-[70px]  mdx:text-[80px] lg:text-[100px] xl:text-[130px] font-extrabold pr-6`}
+              >
+                {" "}
+                Muhammad <br /> Azan
+              </span>
+              A FRONTEDN DEVELOPER
+            </h1>
+          </div>
+
+          <div
+            className={`${openSans.className}  text-[20px] sm:text-[22px] mt-2 px-2 sm:px-12 font-light text-center tracking-wider`}
+          >
+            <p>
+              I can transforms ideas into smooth, high-impact websites that
+              actually help your business grow and your users stick around.
+            </p>
+          </div>
+
+
+          <div id="about" >
+            <Link href="#projects" >
+            <button className= {` ${openSans.className} mt-12 font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-10 bg-white dark:bg-black w-[200px] text-[18px] py-[15px] rounded-[60px] flex justify-center items-center border-solid border-2 border-black dark:border-white   text-black dark:text-white`}>View Projects <span className="ml-5 mt-1">→</span> </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -108,3 +93,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

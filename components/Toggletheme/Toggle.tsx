@@ -52,7 +52,7 @@ const Theme = () => {
   return (
     <>
       <div
-        className={`${style.main} relative ml-[5rem] flex items-center text-[1.7rem] w-20 h-8 rounded-full dark:bg-white bg-main cursor-pointer p-1 `}
+        className={`${style.main} relative mr-[3rem] sm:ml-[3rem] lg:ml-[5rem] flex items-center text-[1.7rem] w-20 h-8 rounded-full dark:bg-white bg-black cursor-pointer p-1 `}
         onClick={() => {
           changeTHeme();
           console.log("AUTOMATIC SET THE VALUE");
@@ -60,7 +60,7 @@ const Theme = () => {
       >
         <FontAwesomeIcon icon={faMoon} className="text-white" />
         <div
-          className="absolute bg-white dark:bg-black rounded-full w-[17px] h-[17px] shadow-md transform transition-transform duration-300"
+          className={`absolute bg-white dark:bg-black rounded-full w-[17px] h-[17px] shadow-md transform transition-transform duration-300`}
           style={darkMode ? { left: "2px" } : { right: "2px" }}
         ></div>
         <FontAwesomeIcon

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import ScrollToTop from "@/components/Scroller/Scroller";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 // import "@fortawesome/fontawesome-svg-core/styles.css"; // Import styles
 
 // import Header from './Components/Header/Header';
-import Footer from "@/components/Footer/Footer";
+// import Footer from "@/components/Footer/Footer";
 
 export default function RootLayout({
   children,
@@ -34,10 +34,10 @@ export default function RootLayout({
     <html lang="en">
    
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-[#14073e]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black`}
       >
         {children}
-        <Footer/>
+        <ScrollToTop  />
       </body>
     </html>
   );
